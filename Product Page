@@ -1,0 +1,578 @@
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+  .d1{background:;}
+  .d2{background:;}
+  .d3{background:;}
+
+.header {
+  position: auto;
+  top: 0px;
+  min-height: 75px;
+  margin: 0 0 0 0;
+  width:100%;  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.container {
+  width: 60%;
+  background: white;
+  margin: 0 auto;
+  justify-content: center
+}
+
+.style {
+  color: #dba12c;
+}
+
+.style2 {
+  color: #222618;
+  font-size:26px;
+}
+
+.style3 {
+  color: #478540;
+  font-size:17px;
+}
+
+.style4 {
+  color: #ad9f32;
+  font-size:17px;
+}
+
+   /**.flex-container {
+  display: flex;
+  flex-direction: row;
+   background-color: fff;
+   align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+
+.flex-container > div {
+  background-color: #fff;
+  margin: 10px;
+  padding: 50px;
+  font-size: 50px; **/
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white; 
+  width: auto;
+  height: 45px;
+  color: brown;
+}
+
+.topnav a {
+  float: left;
+  color: #414a2c;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px; 
+  border-radius: 40px 0 40px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #daf78f;
+  color: black;
+}
+
+.topnav a.active { 
+  background-color: #cbf1f5;
+  color: #414a2c;
+}
+
+header {
+  position: relative;
+  top: 0;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: orange;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+.enter {
+  padding: 0px 30px;
+    height: 30px;
+  width: 150px;
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+
+li {
+  list-style: none;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+a {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 15px;
+  display: grid;
+  padding: 13px;
+  border-radius:0 35px 0 35px;
+  background-color: #8abd57;
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  background-color: #679638;
+  color: white;
+}
+
+.active {
+  background-color: #27400f;
+  color: white;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+.grid {
+  display: flex;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+  
+  #pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(60% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(70% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+  margin-left: -35px;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > btn:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 3px;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+
+footer > ul {
+  display: flex;
+  justify-content: left;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 2px;
+  margin-left: 52px;
+  display: flex;
+  justify-content: left;
+  font-size: 0.8em;
+  color: #444;
+}
+
+.price-bar {
+  color: #313625;
+  font-size:16px;
+  font-family:Montserrat;
+}
+
+@media (max-width: 600px) {
+  .logo  {
+    display: none;
+  }
+  .icon2  {
+    display:none;
+  } 
+  .price, .sub, .book {
+    text-size: 14px;
+    wdith: auto;
+  }
+  .nav-link a {
+    width: 100%;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 0 35px 0 35px;
+  }
+}
+</style>
+
+<div id="page-wrapper">
+  <header id="header" class="header">
+    <div class="logo">
+      <img id="header-img" 
+           class="logo1" src="https://i.ibb.co/pKMvM8P/Marathon-word-logo-colourful.png" 
+           alt="Marathon Couriers Logo" 
+           border="0" 
+           style="height: auto; width: 350px; margin-top: 10px; margin-left: -60px;">
+      </div>
+        
+        <nav id="nav-bar" class="nav-link" style="margin:35x -90px 0 0">
+          <ul>
+        <li><a href="#how" class="nav-link">How To Book</a></li>
+        <li><a href="#member" class="nav-link">Subscription Services</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            
+      </nav>
+        
+      </header>
+    <div style="text-align:center;">
+      <h1 id="title" style="color:#313625; font-family: 'Montserrat', sans-serif; font-size: 27px">
+            We carry your business like it's our own.
+          </h1>
+      </div>
+    <section id="hero">
+    <h2 style="font-family:Montserrat, sans-serif; color:#313625; font-size:25px; margin: 0 0 9px 0">Join our mailing list<br><text class="style3">For access to <text class="style4">flash deals</text>, <text class="style4">new service<br> beta testing</text> and <text class="style4">Marathon Developments</text>.</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="name" 
+        class="enter"
+        id="name"
+        type="name"
+        placeholder="Enter name"
+        style="margin:0 0 5px 0; text-align:center;"
+        required
+      /><br>
+      <input
+        name="email" 
+        style="text-align:center;"     
+        class="enter"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      /><br>
+      <input id="submit" type="submit" value="Join!" class="btn" />
+    </form>
+  </section>
+    <br>
+    <div class="container">
+    <section id="how">
+      <div class="grid">
+        <div class="icon2" style="margin:28px 40px 0 0;"><img src="https://i.ibb.co/YcZFNWL/user.png" alt="user" style="height: 50px; width: auto;" border="0"></div>
+        <div class="desc">
+           
+         <p class="book" style="font-family:Montserrat, sans-serif; color:#313625; font-size:20px;"><text class="style2">How To Book</text><br> 
+           Persons can utilize Marathon Couriers in various situations where the job calls for the routing of a product, package or item.<br> We make the process so easy that the most tasking part is literally the <b>first and last</b>.
+           <br> <text class="style"> SIGNING UP! </text> 
+         </p>
+           </div>
+      </div>
+      </div>
+      <br>
+        <br>
+      <div class="container">
+    <section id="member">
+      <div class="grid">
+        <div class="icon2" style="margin:0px 40px 0 -10px;"><img src="https://i.ibb.co/ZVRCw46/teamwork.png" alt="teamwork" border="0" style="height: 60px; width: auto;"></div>
+        <div class="desc">
+           
+         <p class="sub" style="font-family:Montserrat, sans-serif; margin:0 0 0 0px; color:#313625; font-size:20px;"><text class="style2">Subscriptions</text><br> 
+           Persons who utilize our services frequently are offered subscription packages which offers a growing list of benefits. Based on volume and range, the cost to customers is drastically reduced. They also benefit from same day deliveries. And marketing on Marathon Platforms aswell as SOE optimization services for further more effective market reach.
+           <br> <text class="style"> Become a Marathoneer! </text> 
+         </p>
+           </div>
+      </div>
+      </div>
+        <div class="container">
+    <section id="pricing">
+      <div class="grid" style="margin-left: 20px;">
+        <div style="margin:4px 40px 0 -40px;"><img class="icon2" src="https://i.ibb.co/YT4Hyvy/best-price.png" alt="best-price" border="0" style="height: 70px; width: auto;"></div>
+        <div class="desc">
+           
+         <p class="price" style="font-family:Montserrat, sans-serif; margin:0 0 0 0px; color:#313625; font-size:20px;"><text class="style2">Price positive</text><br> 
+           Basic deliveries start at $40 for most parts of Trinidad and vary based on the distance of pick up and destination locations. Our business model since inception is to work along with consumers and businesses to reduce the cost and taskload using creative, technical solutions; hence the introduction of our subscription packages which are crafted by all parties involved based on customer goals and needs. 
+         </p>
+           </div>
+      </div>
+      </div>
+      </div>
+          </section>
+        <section id="how-it-works">
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/hm-MOdLU21M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+        <div class="price-bar">
+    <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level">Light Volume Package</div>
+        <h2>$300</h2>
+        <ol style="font-size:17px;">
+          <li>Best for clients with;<br>2+ average deliveries per day</li>
+          <li>10 anywhere deliveries</li>
+          <li>Online marketing</li>
+          <li>Same day Deliveries<br> • orders before 11am</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">Medium Volume Package</div>
+        <h2>$625</h2>
+        <ol style="font-size:17px;">
+          <li>Best for clients with;<br>5+ average deliveries per day</li>
+          <li>25 anywhere deliveries</li>
+          <li>Online marketing</li>
+          <li>Same day Deliveries<br> • orders before 11am</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve">
+        <div class="level">High Volume Package</div>
+        <h2>$1000</h2>
+        <ol style="font-size:17px;">
+          <li>15+ average deliveries per day</li>
+          <li>50 anywhere deliveries</li>
+          <li>SOE optimization<br style="margin: 0 0 0.5px 0;">Fulfillment service trial</li>
+          <li>Same day Deliveries<br> • orders before 11am</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Contact</li>
+      </ul>
+      <span>Copyright 2022, Marathon Couriers LLC</span>
+      </div>
+    </footer>
+  </div>
+</div>
